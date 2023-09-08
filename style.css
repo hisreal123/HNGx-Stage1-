@@ -3,15 +3,14 @@
     margin: 0;
 }
 
-a:hover {
-    text-decoration: none;
-}
+
 .app{
     display: flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f1faee;
 }
 
 .app .profile img {
@@ -19,6 +18,7 @@ a:hover {
     height: 200px;
     border-radius:10%;
     margin-top: 10px;
+    box-shadow:  0 0 2px rgba(0, 0, 0, 0.514);
 }
 
 .app .profile  [data-testid="slackUserName"]{
@@ -44,7 +44,7 @@ a:hover {
     margin-top: 5px;
 }
 
-.app .right  [data-testid="“githubURL"]{
+.app .right [data-testid=“githubURL”]{
     font-size:  1rem;
     color: rgba(0, 0, 0, 0.658);
     text-align: center;
@@ -55,4 +55,9 @@ a:hover {
     padding: 5px 15px ;
     color: whitesmoke;
     display: block;
+    box-shadow:  0 0 2px rgba(0, 0, 0, 0.329);
+}
+
+.app .right [data-testid=“githubURL”]:hover{
+    background-color: rgba(18, 14, 240, 0.863);
 }
